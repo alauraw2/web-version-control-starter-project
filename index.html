@@ -1,38 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<!--Using bootstrap 5 framework-->
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Using bootstrap 5 framework-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body >
-  <div class="container">  <!--added container class to make the page responsive and look better on different screen sizes-->
-      <div class="bg-info-subtle" style="padding: 20px; margin-top: 20px; border-radius: 10px;"> <!--added background color, padding, margin, and border radius to make the page look better--> 
-  <h1>Alaura Ward</h1>
-  <p>This is Alaura's first web page using version control with Git and GitHub.</p>
-  <h2>About Alaura</h2>
-  <h3>Top 3 Hobbies</h3>
-  <ol>
-    <li>Running</li>
-    <li>Cooking</li>
-    <li>Gaming</li>
-  </ol>
-  <div>
-    <h3>Alaura's Favorite Foods</h3>
-    <ol> 
-      <li>Calebacita's</li>
-      <li>Pho</li>
-      <li>Chocolate</li>
-    </ol>
-  </div>
-  <div>
-    <h2>Oso</h2>
-    <p>This is Oso, he is  a 2 year old goldendoodle that likes car rides and playing fetch.</p>
-    <img src="images/oso.jpg" alt="Oso" style="width: 300px; height: auto; border-radius: 10px;">
-  </div>
-</body>
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Using Bootstrap 5 framework -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery used to load the navbar -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar gets added here -->
+    <div id="nav-placeholder"></div>
+    <div class="container">
+      <div
+        class="bg-info-subtle"
+        style="padding: 20px; margin-top: 20px; border-radius: 10px"
+      >
+        <h1>Alaura Ward</h1>
+        <p>
+          This is Alaura's first web page using version control with Git and
+          GitHub.
+        </p>
+        <h2>Oso</h2>
+        <p>
+          This is Oso, he is a 2 year old goldendoodle that likes car rides and
+          playing fetch.
+        </p>
+        <img
+          src="images/oso.jpg"
+          alt="Oso"
+          style="width: 300px; height: auto; border-radius: 10px"
+        />
+      </div>
+    </div>
+
+    <script>
+      // Load only the #site-nav element from navbar.html
+      $("#nav-placeholder").load("navbar.html #site-nav");
+    </script>
+  </body>
 </html>
